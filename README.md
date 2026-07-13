@@ -30,14 +30,34 @@ This version runs entirely in the browser, so the corporate PC does not need Pow
 
 There is a friendlier, non-technical walkthrough in [`help.html`](./help.html).
 
-## Local preview
+## Local preview & Deployment
 
-Because this is a static app, any simple web server will work for previewing it locally.
+This project is configured for deployment on **Cloudflare Pages**.
 
+### 1. Using Node.js & Wrangler (Recommended)
+
+Install the dependencies first:
+```bash
+npm install
+```
+
+To preview the site locally using Wrangler:
+```bash
+npm run dev
+```
+Then open `http://localhost:8788`.
+
+To deploy directly to Cloudflare Pages:
+```bash
+npm run deploy
+```
+
+### 2. Using Python (Alternative)
+
+If you do not have Node.js installed, any static file server will work for previewing locally:
 ```bash
 python3 -m http.server 8085
 ```
-
 Then open `http://localhost:8085`.
 
 ## Notes

@@ -1,0 +1,14 @@
+{
+  "name": "seaward-pat-converter",
+  "version": "1.0.0",
+  "description": "Browser-based converter for Seaward Apollo 400+ PAT export files",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "preview": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "wrangler": "^4.103.0"
+  }
+}
