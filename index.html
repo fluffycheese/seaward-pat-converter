@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seaward PAT Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Seaward Apollo 400+ converter</p>
+        <h1>Turn PAT text exports into Excel-friendly CSV files.</h1>
+        <p class="lede">
+          Upload the `.txt` export from the tester, parse every test record in
+          the browser, and download a CSV with the fields preserved.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="dropzone" id="dropzone">
+          <input id="fileInput" type="file" accept=".txt,text/plain" />
+          <div class="dropzone-copy">
+            <strong>Choose a PAT export</strong>
+            <span>or drag and drop the `.txt` file here</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="convertButton" type="button" disabled>Convert to CSV</button>
+          <a id="downloadButton" class="download" aria-disabled="true" hidden>Download CSV</a>
+        </div>
+
+        <dl class="stats" aria-label="Conversion status">
+          <div>
+            <dt>File</dt>
+            <dd id="fileName">No file selected</dd>
+          </div>
+          <div>
+            <dt>Records</dt>
+            <dd id="recordCount">0</dd>
+          </div>
+          <div>
+            <dt>Unknown labels</dt>
+            <dd id="unknownCount">0</dd>
+          </div>
+        </dl>
+
+        <pre class="message" id="message">Waiting for a PAT export.</pre>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <h2>Preview</h2>
+          <p>The first few parsed rows from the CSV output.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr id="previewHead"></tr>
+            </thead>
+            <tbody id="previewBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
