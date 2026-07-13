@@ -30,6 +30,42 @@ This version runs entirely in the browser, so the corporate PC does not need Pow
 
 There is a friendlier, non-technical walkthrough in [`help.html`](./help.html).
 
+## Development Branches & Workflow
+
+We use a three-stage branching workflow to ensure safe development and production deployments.
+
+| Branch | Purpose | Cloudflare Deployment |
+|--------|---------|---------------------|
+| `dev` | Local development branch. Work on CSS, scripts, HTML layout. | **No automated build**. Preview locally with `npm run dev` or `npm run preview`. |
+| `staging` | Integration branch after `dev` changes are verified locally. | **Automated Cloudflare Pages build** for testing on a live preview URL (`*.pages.dev`). |
+| `main` | Production-ready branch. Merges from `staging` after testing. | **Automated Cloudflare Pages build** and deployment to `https://apollo-pat-exporter.fluffycheese.co.uk`. |
+
+**Recommended workflow:**
+
+1. Work on `dev` locally.
+2. Test locally using `npm run dev` or `npm run preview`.
+3. Merge `dev` → `staging` and push.
+4. Cloudflare automatically builds and deploys a preview URL for review/testing.
+5. Once approved, merge `staging` → `main` and push.
+6. Cloudflare automatically builds and deploys the production site.
+> **Note:** All merges should be done via pull requests to maintain a clear history and allow review.
+
+---
+
+## Cloudflare Pages Setup
+
+1. **Create a new Pages project** on Cloudflare and connect the GitHub repository (`https://github.com/fluffycheese/seaward-pat-converter`).
+2. **Production branch**: `main`
+3. **Preview branch**: `staging` (optional: other branches can also trigger preview builds)
+4. **Framework preset**: `None` (or Static HTML)
+5. **Build settings**:
+   - Build command: `npm run build`
+   - Output directory: `.`
+6. **Custom domain**: `apollo-pat-exporter.fluffycheese.co.uk` → set via the Cloudflare Pages dashboard for the `main` branch.
+7. **Always HTTPS**: Enable for secure connections.
+
+---
+
 ## Local preview & Deployment
 
 This project is configured for deployment on **Cloudflare Pages**.

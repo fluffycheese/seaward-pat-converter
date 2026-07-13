@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler pages dev .",
+    "build": "echo 'No build required'",
     "preview": "wrangler pages dev .",
     "deploy": "wrangler pages deploy ."
   },
