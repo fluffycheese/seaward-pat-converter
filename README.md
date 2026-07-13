@@ -12,11 +12,23 @@ A small browser-based converter for Seaward Apollo 400+ PAT export files.
 
 This version runs entirely in the browser, so the corporate PC does not need PowerShell, Node.js, or any installed app. You just host these static files somewhere and give users a URL.
 
+## Server prerequisites
+
+- Any static file server will work: Nginx, Apache, Caddy, IIS, S3/CloudFront, or a simple internal web host.
+- No application runtime is required for the converter itself.
+- A modern browser is required on the client side because the upload and download happen in the browser.
+- HTTPS is recommended if the app will be accessed over a network.
+- If you only want to test it locally, `python3 -m http.server 8085` is enough.
+
 ## How users use it
 
 1. Open the web page in a browser.
 2. Choose the Seaward export `.txt` file.
 3. Download the generated CSV.
+
+## User guide
+
+There is a friendlier, non-technical walkthrough in [`help.html`](./help.html).
 
 ## Local preview
 

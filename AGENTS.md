@@ -24,6 +24,7 @@ This repository contains the Seaward PAT converter project. The current scope is
 - Keep changes small and easy to reason about.
 - Validate parser changes against representative PAT export samples.
 - Keep the browser-only deployment story intact unless the user asks for a different architecture.
+- Treat the vendor manual screenshots in `assets/img/manual/` as documentation assets and keep their captions aligned with the manual pages they came from.
 
 ## References
 

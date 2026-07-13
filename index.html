@@ -4,9 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Seaward PAT Converter</title>
+    <meta name="theme-color" content="#1f6f5b" />
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="./assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Seaward PAT Converter home">
+        <img class="brand-mark" src="./assets/img/logo-transparent1.png" alt="" />
+        <span class="brand-text">
+          <strong>Seaward PAT Converter</strong>
+          <span>Browser-first CSV export</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a aria-current="page" href="./index.html">Converter</a>
+        <a href="./help.html">Help</a>
+      </nav>
+    </header>
+
     <main class="shell">
       <section class="hero">
         <p class="eyebrow">Seaward Apollo 400+ converter</p>
@@ -15,6 +35,11 @@
           Upload the `.txt` export from the tester, parse every test record in
           the browser, and download a CSV with the fields preserved.
         </p>
+        <div class="hero-note">
+          <span class="hero-chip">No install</span>
+          <span class="hero-chip">No PowerShell</span>
+          <span class="hero-chip">No database</span>
+        </div>
       </section>
 
       <section class="panel">

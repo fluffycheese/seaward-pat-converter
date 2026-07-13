@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to use the Seaward PAT Converter</title>
+    <meta name="theme-color" content="#1f6f5b" />
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="./assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Seaward PAT Converter home">
+        <img class="brand-mark" src="./assets/img/logo-transparent1.png" alt="" />
+        <span class="brand-text">
+          <strong>Seaward PAT Converter</strong>
+          <span>User guide</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="./index.html">Converter</a>
+        <a aria-current="page" href="./help.html">Help</a>
+      </nav>
+    </header>
+
+    <main class="shell docs-shell">
+      <section class="hero hero-grid">
+        <div>
+          <p class="eyebrow">Non-technical guide</p>
+          <h1>Export the tester file, then open it in your browser.</h1>
+          <p class="lede">
+            This page is written for someone who just wants the job done. It
+            shows how to get the PAT export off the Apollo tester and how to
+            use the converter on a normal web page.
+          </p>
+          <div class="hero-note">
+            <span class="hero-chip">No app install</span>
+            <span class="hero-chip">Works in a browser</span>
+            <span class="hero-chip">Download CSV for Excel</span>
+          </div>
+        </div>
+        <aside class="callout">
+          <strong>What you need</strong>
+          <p>
+            A browser, the Seaward export file, and access to this web page.
+            You do not need PowerShell, Node.js, or anything installed on the
+            PC.
+          </p>
+        </aside>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Step 1</p>
+          <h2>Get the file off the tester</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Open the main menu on the Apollo tester</h3>
+              <p>
+                The manual shows the main menu and the key areas of the screen.
+                The download option is reached from this menu.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Choose the download option that creates a file</h3>
+              <p>
+                Follow the download flow on the device and choose the option
+                that saves the results to a file for PC use.
+              </p>
+              <ul>
+                <li>Use the USB-PC cable option if your setup uses a cable.</li>
+                <li>Use the flash memory stick option if your model supports it.</li>
+                <li>Save the export as a `.txt` file.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>Transfer the `.txt` file to the computer</h3>
+              <p>
+                When the transfer finishes, copy or save the file somewhere
+                easy to find, such as the Downloads folder.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>What the tester looks like</h2>
+        </div>
+
+        <div class="figure-grid">
+          <figure class="shot">
+            <img src="./assets/img/manual/page-13.png" alt="Apollo+ tester front, rear, and underside views from the manual" />
+            <figcaption>Device overview from the manual.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="./assets/img/manual/page-16.png" alt="Apollo+ user interface and main menu diagram from the manual" />
+            <figcaption>Menu layout and screen areas.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="./assets/img/manual/download-40.png" alt="Manual page showing the download screen and file transfer options" />
+            <figcaption>Download screen and file transfer options.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="./assets/img/manual/download-41.png" alt="Manual page showing filters and the option to save all data" />
+            <figcaption>Filters versus saving everything.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Step 2</p>
+          <h2>Use the converter</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Open the converter page</h3>
+              <p>
+                Visit the converter in your browser. It is the same site as
+                the help page, just the home page.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Choose the export file</h3>
+              <p>
+                Click <strong>Choose a PAT export</strong> and select the
+                `.txt` file you saved from the tester.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>Convert and download the CSV</h3>
+              <p>
+                Click <strong>Convert to CSV</strong>, then use
+                <strong>Download CSV</strong> to save the spreadsheet file.
+                Open that file in Excel if you want to sort or filter it.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Notes</p>
+          <h2>Quick reminders</h2>
+        </div>
+        <div class="note-box">
+          If the device screen wording is slightly different on your model,
+          follow the option that creates a `.txt` export for use on a PC. The
+          converter only needs the text file, not a special Seaward app.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
