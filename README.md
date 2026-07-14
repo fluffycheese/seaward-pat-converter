@@ -1,6 +1,6 @@
 # Seaward PAT Converter
 
-A small browser-based converter for Seaward Apollo 400+ PAT export files.
+A small browser-based converter for Seaward Apollo 400+ PAT export files. The latest version is freely avaialable for anyone to use on the Cloudflare hosted, [public version](https://apollo-pat-exporter.fluffycheese.co.uk/)
 
 ## What it does
 
@@ -8,7 +8,9 @@ A small browser-based converter for Seaward Apollo 400+ PAT export files.
 - Parse each test record into columns
 - Download a CSV that opens in Excel
 
-## Why this shape
+## Why this design
+
+In my job, our onsite electrician requested for us to install the PATguard3 software provided by Seaward. In conducting due diligence, I was not prepared to install this on a corporate PC. From reading Seawards documentation, I was concerned that it was written for Windows 7, referenced MS Office 2007 throughout and most likely is using an MS Access backend for the database. In my experience, companies that have documentation referencing old, unsupported software are normally not very good at keeping their proprietary product and dependencies upto date or closing security vunerabilities.
 
 This version runs entirely in the browser, so the corporate PC does not need PowerShell, Node.js, or any installed app. You just host these static files somewhere and give users a URL.
 
@@ -28,7 +30,7 @@ This version runs entirely in the browser, so the corporate PC does not need Pow
 
 ## User guide
 
-There is a friendlier, non-technical walkthrough in [`help.html`](./help.html).
+There is a friendlier, non-technical walkthrough in [`help.html`](https://apollo-pat-exporter.fluffycheese.co.uk/help).
 
 ## Development Branches & Workflow
 
